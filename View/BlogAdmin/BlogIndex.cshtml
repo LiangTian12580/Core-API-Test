@@ -1,0 +1,15 @@
+﻿@page
+@model IEnumerable<WebCore.Model.employees>
+@{
+    <div>
+        <form method="post">
+            <input type="text" name="title" />
+            <input type="text" name="title" />
+            <input type="submit" name="Submit" />
+        </form>
+    </div>
+    @foreach (var pp in Model)
+    {
+        <p>@pp.word</p>
+    }
+}
